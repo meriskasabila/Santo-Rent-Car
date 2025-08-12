@@ -1,0 +1,223 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.x-rounded {
+    border-radius: 15px;
+}
+
+.x-shadow {
+  box-shadow: 0 0.30rem .8rem rgba(0, 213, 255, 0.514); /* Lighter color and less blur */
+}
+
+#tips img {
+    /* border-radius: 150px;
+    width: 18rem;
+    height: 18rem; */
+}
+
+body {
+    font-family: 'Signika', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.05em;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    /* background-color: rgb(83, 28, 0); */
+    /* background-color: rgb(0, 98, 225);  */
+    background: linear-gradient(55deg, rgba(2,0,36,1) 0%, rgb(0, 122, 252) 80%, rgb(0, 176, 245) 100%);
+}
+
+section {
+    /* left: 0;
+    right:0;
+    bottom:0;
+    top:0; */
+}
+
+
+.carousel-item img {
+    opacity: 0.7;
+    /* min-height: 400px;
+    max-height: 800px; */
+}
+
+.carousel-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#heading > div {
+    text-shadow: 0px 2px 2px #0a007d;
+}
+
+#heading .heading-title {
+    font-size: 2.5rem;
+}
+
+#heading .heading-body {
+    font-size: 4rem;
+}
+
+#heading .heading-footer {
+    font-size: 1.5rem;
+}
+
+#mobil .card {
+    box-shadow: 0px 2px 6px #91e2ff;
+    /* border: 2px solid green !important; */
+    border-radius: 15px !important;
+}
+
+.card-content {
+    /* background: linear-gradient(40deg, rgb(255, 106, 0) 0%, rgb(255, 140, 0) 40%, rgb(225, 255, 0) 100%); */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px #ffffff;
+    border-radius: 2%;
+    text-shadow: 1px 1px #000;
+    padding: 2px;
+    text-align: center;
+    font-size: 1em;
+    overflow: hidden;
+    color: #fff;
+}
+
+.card-content .hero-image p {
+    background-color: rgba(0, 47, 150, 0.884);
+    width: 100%;
+    font-weight: bold;
+    left:0;
+    padding: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    letter-spacing: 0.1em;
+}
+
+.card-body .btn-wa {
+    background-color: #00c40a;
+    color: #ffffff;
+}
+
+.hero-image {
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.card-content :hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+#content .card {
+    max-width: 300px;
+    /* min-width: 200px; */
+    /* min-height: 300px; */
+    font-size: .9em;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+/* .hero-image label {
+    padding: 2px;
+    color: #fff;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7)
+} */
+
+@media only screen and (max-width: 960px) {
+
+#heading .heading-title {
+    font-size: 2.5rem;
+}
+
+#heading .heading-body {
+    font-size: 3rem;
+}
+
+#heading .heading-footer {
+    font-size: 1.5rem;
+}
+}
+
+.wa-bubble {
+display: flex;
+right: 0;   
+margin: 0px 5px 50px 0px;
+/* border: 2px solid #ffffff; */
+border-radius: 50%;
+width: 60px;
+height: 60px;
+box-shadow: 0px 0px 4px #ffffff;
+animation: 2s swing infinite alternate
+}
+
+.wa-bubble img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes swing {
+    0% {
+        transform: scale(0.95);
+        filter: brightness(1.1);
+    }
+    /* 40% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.95);
+    } */
+    50% {
+    transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media only screen and (min-width: 560px) {
+    .rtp-nav-items {
+        transform: translateX(0px);
+    }
+
+
+}
+
+@media only screen and (max-width: 560px) {
+    body {
+        /* background: rgb(2,0,36);
+        background: linear-gradient(120deg, rgb(118, 37, 0) 0%, rgb(155, 31, 0) 50%, rgb(235, 141, 0) 100%); */
+    }
+    /* .carousel-item img {
+        height: 300px
+    } */
+    #heading .heading-title {
+        font-size: 1.5rem;
+    }
+
+    #heading .heading-body {
+        font-size: 1.8rem;
+    }
+
+    #heading .heading-footer {
+        font-size: 1rem;
+    }
+
+    .wa-bubble {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    /* .carousel-item img {
+        height: 200px
+    } */
+    body {
+        background: linear-gradient(80deg, rgba(2,0,36,1) 0%, rgb(0, 135, 189) 60%,  rgb(0, 122, 252) 100%);
+    }
+}
